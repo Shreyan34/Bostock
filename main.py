@@ -9,7 +9,6 @@ deck = [f"{rank} of {suit}" for suit in suits for rank in ranks]
 
 # define the main loop
 def mainLoop():
-    
    
     # use python's built-in function to shuffle the deck of cards in random
     random.shuffle(deck)
