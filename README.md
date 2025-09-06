@@ -25,7 +25,7 @@ Assign each revealed card a numeric value as follows:
 
 - Number cards: face value (2 → 2, 3 → 3, ..., 10 → 10)
 - Jack  (J) : 5 points
-- Queen (Q) : 20 points
+- Queen (Q) : 15 points
 - King  (K) : 10 points
 - Ace   (A) : 5 points
 
@@ -39,12 +39,12 @@ EXAMPLE
 -------
 Suppose the shuffled deck yields these picks:
 - 4  → 7 of Diamonds   → 7 points
-- 12 → Queen of Spades → 20 points
+- 12 → Queen of Spades → 15 points
 - 30 → 10 of Clubs     → 10 points
 - 47 → Ace of Hearts   → 5 points
 
-YOUR SUM = 7 + 20 + 10 + 5 = 42  
-If the bet was 34, you win (42 ≥ 34).
+YOUR SUM = 7 + 15 + 10 + 5 = 37  
+If the bet was 34, you win (37 ≥ 34).
 
 RULES FOR PYTHON VERSION
 ------------------------
