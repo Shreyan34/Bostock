@@ -113,7 +113,7 @@ print("Shuffle the deck at the start of each round.")
 print("The computer (or dealer) sets a random bet between 14 and 34.")
 print("The player chooses four distinct card positions (1–52).")
 print("Reveal the chosen cards from the shuffled deck.")
-print("Assign values: numbers = face value, Jack = 5, Queen = 20, King = 10, Ace = 5.")
+print("Assign values: numbers = face value, Jack = 5, Queen = 15, King = 10, Ace = 5.")
 print("Add up the four values to get the player’s sum.")
 print("If sum ≥ bet, the player wins; otherwise, the player loses.")
 print("Duplicate or invalid card positions are not allowed.")
@@ -121,3 +121,4 @@ print("Play multiple rounds; highest number of wins decides the champion.\n")
 print("==================================================================")
 
 mainLoop() # call the main loop
+
