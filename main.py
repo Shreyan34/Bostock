@@ -13,8 +13,11 @@ def mainLoop():
     # use python's built-in function to shuffle the deck of cards in random
     random.shuffle(deck)
 
-    # find a random sum to act as a bet
-    bet = random.randint(14,34)
+    # bet -- human or computer's choice
+    choice = int(input("Type 1 to make a bet yourself.\nType any other number to let the computer make the bet.\n"))
+    bet = 0 # initialise the 'bet' variable
+    if(choice == 1): bet = int(input("Type your bet:"))
+    else: bet = random.randint(14,34) # find a random sum to act as a bet
 
     print(f"Sum to bet: {bet}") # print the sum to bet
 
@@ -92,7 +95,7 @@ def mainLoop():
     # print the values that the player gets
     print("You got the following values!")
     print(f"Value 1: {v1}")
-    print(f"Value 2: {v2}")
+    print(f"Value 2: {v2}") 
     print(f"Value 3: {v3}")
     print(f"Value 4: {v4}")
     print("") # for neatness
@@ -102,7 +105,7 @@ def mainLoop():
     if(sum>=bet):
         print("YOU HAVE WON!!!")
     else:
-        print("Better luck next time!")
+        print("OOPS!! Better luck next time!")
     
 
 # print the rules of Bostock
