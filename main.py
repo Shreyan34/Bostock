@@ -23,6 +23,7 @@ def mainLoop():
     d2 = int(input("Second Card: "))
     d3 = int(input("Third Card: "))
     d4 = int(input("Fourth Card: "))
+    print("") # for neatness
 
     # check if two cards are same
     if(d1 == d2 or d1 == d3 or d1 == d4 or d2 == d3 or d2 == d4 or d3 == d4): 
@@ -35,16 +36,17 @@ def mainLoop():
         pass
 
     # find the cards
-    f1 = deck[d1] 
-    f2 = deck[d2]
-    f3 = deck[d3]
-    f4 = deck[d4]
+    f1 = deck[d1-1] 
+    f2 = deck[d2-1]
+    f3 = deck[d3-1]
+    f4 = deck[d4-1]
 
     # display the cards chosen
     print(f"First card chosen: {f1}") 
     print(f"Second card chosen: {f2}")
     print(f"Third card chosen: {f3}")
     print(f"Fourth card chosen: {f4}")
+    print("") # for neatness
 
     # get the first words
     firstLetter1 = f1.split()[0]
@@ -93,6 +95,7 @@ def mainLoop():
     print(f"Value 2: {v2}")
     print(f"Value 3: {v3}")
     print(f"Value 4: {v4}")
+    print("") # for neatness
 
     sum = v1 + v2 + v3 + v4
     print(f"YOUR SUM: {sum}")
@@ -120,5 +123,4 @@ print("Duplicate or invalid card positions are not allowed.")
 print("Play multiple rounds; highest number of wins decides the champion.\n")
 print("==================================================================")
 
-mainLoop() # call the main loop
-
+mainLoop() # call the main loop of the game
