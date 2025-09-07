@@ -45,10 +45,10 @@ def mainLoop():
     f4 = deck[d4-1]
 
     # display the cards chosen
-    print(f"First card chosen: {f1}") 
-    print(f"Second card chosen: {f2}")
-    print(f"Third card chosen: {f3}")
-    print(f"Fourth card chosen: {f4}")
+    print(f"First card turns out to be: {f1}") 
+    print(f"Second card turns out to be: {f2}")
+    print(f"Third card turns out to be: {f3}")
+    print(f"Fourth card turns out to be: {f4}")
     print("") # for neatness
 
     # get the first words
